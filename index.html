@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Weather </title>
+        <link rel="icon" type="image/x-icon" href="/home/default/Downloads/snowflake.png">
+        <style>
+         body {
+            background-color: rgb(13, 0, 129);
+             display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+         }
+
+         .head_title {
+            color: white;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 50px;
+            
+            padding-bottom: 10px;
+            padding-top: 100px;
+         }
+         .search_bar {
+            border:none;
+            height: 50px;
+            width: 600px;
+            border-radius: 25px; 
+            padding-left: 15px;
+            font-size: 16px;
+         }
+         .search_button {
+            border: none;
+            height: 50px;
+            width: 100px;
+            border-radius: 25px;
+            color: azure;
+            background-color: rgb(0, 163, 141);
+            font-weight: bold;
+            cursor: pointer;
+            
+
+         }
+         .from_container {
+         
+            background-color: rgb(0, 0, 83);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center; /* Center text in the container */
+             
+         }
+         .button_page {
+            padding-left: 10px;
+         }
+
+        </style>
+    </head>
+
+    <body>
+        
+        <form  class="from_container"  action="https://openweathermap.org/find" method="get">
+
+
+            <h1 class="head_title"> Discover the weather in <br> every city you go </h1>
+            
+            <input type="text" class="search_bar" list="suggestions" name="q" placeholder="Search for a location..." required>
+            
+            <datalist id="suggestions">
+            <option value="Andhra Pradesh">
+            <option value="Arunachal Pradesh">
+            <option value="Assam">
+            <option value="Bihar">
+            <option value="Chhattisgarh">
+            <option value="Goa">
+            <option value="Gujarat">
+            <option value="Haryana">
+            <option value="Himachal Pradesh">
+            <option value="Jharkhand">
+            <option value="Karnataka">
+            <option value="Kerala">
+            <option value="Madhya Pradesh">
+            <option value="Maharashtra">
+            <option value="Manipur">
+            <option value="Meghalaya">
+            <option value="Mizoram">
+            <option value="Nagaland">
+            <option value="Odisha">
+            <option value="Punjab">
+            <option value="Rajasthan">
+            <option value="Sikkim">
+            <option value="Tamil Nadu">
+            <option value="Telangana">
+            <option value="Tripura">
+            <option value="Uttar Pradesh">
+            <option value="Uttarakhand">
+            <option value="West Bengal">
+            <option value="Andaman and Nicobar Islands">
+            <option value="Chandigarh">
+            <option value="Dadra and Nagar Haveli and Daman and Diu">
+            <option value="Delhi">
+            <option value="Jammu and Kashmir">
+            <option value="Ladakh">
+            <option value="Lakshadweep">
+            <option value="Puducherry">
+            
+            </datalist>
+            
+            <br>
+            
+            <p class="button_page">
+                <button class="search_button">Search</button>
+            </p>
+            
+        </form>
+    </body>
+
+</html>
